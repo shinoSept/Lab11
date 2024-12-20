@@ -60,7 +60,6 @@ int main(){
 
 	int playerScore, yugiScore, playerAction = 0, yugiAction = 0;
 	int playerCards[3] = {drawCard(), drawCard(), 0};
-	srand(time(0));
 	int yugiCards[3] = {drawCard(), drawCard(), 0}; //This line of code is not completed. You need to initialize value of yugiCards[].
 	
 	
@@ -76,7 +75,6 @@ int main(){
 	
 	if(playerAction == 1){
 		//The following lines of code are not completed. Please correct it.
-		srand(time(0));
 		playerCards[2] = drawCard();
   		playerScore = calScore(playerCards[0], playerCards[1], playerCards[2]);
 		cout << "Player draws the 3rd card!!!" << "\n";
@@ -94,7 +92,6 @@ int main(){
 	cout << "Yugi's score: " << yugiScore << "\n";
 	yugiAction = findYugiAction(yugiScore);
 	if(yugiAction == 1){
-		srand(time(0));
 		yugiCards[2] = drawCard();
 		yugiScore = calScore(yugiCards[0],yugiCards[1],yugiCards[2]);
 		cout << "Yugi draws the 3rd card!!!\n";
